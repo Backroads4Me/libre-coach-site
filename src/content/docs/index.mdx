@@ -4,8 +4,6 @@ description: RV Link bridges RVâ€‘C CAN networks with Home Assistant using Nodeâ
 template: splash
 hero:
   tagline: Connect Your RV to Home Assistant. Control and monitor your systems from a beautiful, modern dashboard.
-  image:
-    file: ../../assets/logo.svg
   actions:
     - text: Learn How it Works
       link: /getting-started/introduction/
@@ -53,20 +51,35 @@ head:
       content: https://rvlink.app/img/social-card.jpg
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Image } from 'astro:assets';
+import logo from '../../assets/logo.png';
+import view0 from '../../assets/dashboards/rvlink/view_0.png';
+import assembly1 from '../../assets/assembly/assembly_1.jpg';
+
+<div style="text-align: center; margin: 3rem auto; max-width: 600px;">
+  <Image
+    src={logo}
+    alt="RV Link Logo"
+    width={400}
+  />
+</div>
 
 ## Why Choose RV Link?
 
-<CardGrid stagger>
-	<Card title="Total Control" icon="setting">
-		Manage your lights, shades, locks, pumps, and HVAC systems from a single interface, whether you're inside the coach or miles away.
-	</Card>
-	<Card title="Real-Time Monitoring" icon="magnifier">
-		Keep an eye on tank levels, battery voltage, charger/inverter status, and generator performance with at-a-glance dashboards.
-	</Card>
-	<Card title="Open & Extensible" icon="puzzle">
-		Built on open-source software, RV Link is fully customizable. Add support for new devices or integrate with other smart home platforms.
-	</Card>
+<CardGrid>
+  <Card title="Total Control" icon="setting">
+    Manage your lights, shades, locks, pumps, and HVAC systems from a single
+    interface, whether you're inside the coach or miles away.
+  </Card>
+  <Card title="Real-Time Monitoring" icon="magnifier">
+    Keep an eye on tank levels, battery voltage, charger/inverter status, and
+    generator performance with at-a-glance dashboards.
+  </Card>
+  <Card title="Open & Extensible" icon="puzzle">
+    Built on open-source software, RV Link is fully customizable. Add support
+    for new devices or integrate with other smart home platforms.
+  </Card>
 </CardGrid>
 
 ## Key Features
@@ -89,26 +102,25 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## Gallery Preview
 
 <CardGrid>
-	<Card title="Dashboards">
-		![Dashboard](/img/dashboards/rvlink/view_0.png)
-	</Card>
-	<Card title="Hardware">
-		![Hardware](/img/assembly/assembly_1.jpg)
-	</Card>
+  <Card title="Dashboards">
+    <Image src={view0} alt="Dashboard" />
+  </Card>
+  <Card title="Hardware">
+    <Image src={assembly1} alt="Hardware" />
+  </Card>
 </CardGrid>
 
 <div style="text-align: center; margin-top: 2rem;">
-    [View Full Gallery](/gallery/)
+  [View Full Gallery](/gallery/)
 </div>
 
 ## Ready to Get Started?
 
 <CardGrid>
-    <Card title="Build It Yourself" icon="pencil">
-        [Hardware Guide](/hardware/assembly/)
-    </Card>
-    <Card title="Buy Pre-Assembled" icon="cart">
-        [Purchase](/purchase/)
-    </Card>
+  <Card title="Build It Yourself" icon="pencil">
+    [Hardware Guide](/hardware/assembly/)
+  </Card>
+  <Card title="Buy Pre-Assembled" icon="cart">
+    [Purchase](/purchase/)
+  </Card>
 </CardGrid>
-

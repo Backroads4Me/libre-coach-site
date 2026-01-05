@@ -3,6 +3,9 @@ title: "What is RV-Link?"
 description: "RV-Link bridges your RV's CAN bus to Home Assistant, enabling control and monitoring of lights, climate, tanks, and power systems."
 ---
 
+import { Image } from 'astro:assets';
+import architectureDiagram from '../../../assets/architecture-diagram.png';
+
 RV-Link is an open-source Home Assistant integration that bridges your RV's RV-C (Controller Area Network) to Home Assistant, giving you complete control and monitoring of your RV systems.
 
 ## The Problem
@@ -20,7 +23,7 @@ RV-Link connects directly to your RV's CAN bus and translates all that data into
 
 ## How It Works
 
-![RV-Link System Architecture](/img/architecture-diagram.png)
+<Image src={architectureDiagram} alt="RV-Link System Architecture" />
 
 *The diagram above shows the complete data flow from your RV's devices through to your phone or tablet.*
 

@@ -20,9 +20,6 @@ importers:
       '@fontsource/jetbrains-mono':
         specifier: ^5.2.8
         version: 5.2.8
-      '@six-tech/starlight-theme-six':
-        specifier: ^1.0.16
-        version: 1.0.16(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.3)(rollup@4.55.1)(typescript@5.9.3)))(@fontsource/inter@5.2.8)(@fontsource/jetbrains-mono@5.2.8)(sharp@0.34.5)
       astro:
         specifier: ^5.6.1
         version: 5.16.6(@types/node@25.0.3)(rollup@4.55.1)(typescript@5.9.3)
@@ -1142,14 +1139,6 @@ packages:
     resolution: {integrity: sha512-P1Cz1dWaFfR4IR+U13mqqiGsLFf1KbayybWwdd2vfctdV6hDpUkgCY0nKOLLTMSoRd/jJNjtbqzf13K8DCCXQw==}
     engines: {node: '>=18'}
 
-  '@six-tech/starlight-theme-six@1.0.16':
-    resolution: {integrity: sha512-nEon5Ce1IxmivIzYYYT9iiMCAKQ9r1G9z6/jtZNHt4ZgTFllEtj2KLjquLnJc5vYV8vpm3Df9iOrhRTlRSQsqQ==}
-    peerDependencies:
-      '@astrojs/starlight': '>=0.30.0'
-      '@fontsource/inter': ^5.2.6
-      '@fontsource/jetbrains-mono': ^5.2.6
-      sharp: '>=0.32.0 || >=0.33.0'
-
   '@speed-highlight/core@1.2.14':
     resolution: {integrity: sha512-G4ewlBNhUtlLvrJTb88d2mdy2KRijzs4UhnlrOSRT4bmjh/IqNElZa3zkrZ+TC47TwtlDWzVLFADljF1Ijp5hA==}
 
@@ -1752,11 +1741,6 @@ packages:
 
   markdown-table@3.0.4:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
-
-  marked@15.0.12:
-    resolution: {integrity: sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==}
-    engines: {node: '>= 18'}
-    hasBin: true
 
   mdast-util-definitions@6.0.0:
     resolution: {integrity: sha512-scTllyX6pnYNZH/AIp/0ePz6s4cZtARxImwoPJ7kS42n+MnVsI4XbnG6d4ibehRIldYMWM2LD7ImQblVhUejVQ==}
@@ -3401,15 +3385,6 @@ snapshots:
 
   '@sindresorhus/is@7.2.0': {}
 
-  '@six-tech/starlight-theme-six@1.0.16(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@25.0.3)(rollup@4.55.1)(typescript@5.9.3)))(@fontsource/inter@5.2.8)(@fontsource/jetbrains-mono@5.2.8)(sharp@0.34.5)':
-    dependencies:
-      '@astrojs/starlight': 0.37.1(astro@5.16.6(@types/node@25.0.3)(rollup@4.55.1)(typescript@5.9.3))
-      '@fontsource/inter': 5.2.8
-      '@fontsource/jetbrains-mono': 5.2.8
-      '@pagefind/default-ui': 1.4.0
-      marked: 15.0.12
-      sharp: 0.34.5
-
   '@speed-highlight/core@1.2.14': {}
 
   '@swc/helpers@0.5.18':
@@ -4250,8 +4225,6 @@ snapshots:
   markdown-extensions@2.0.0: {}
 
   markdown-table@3.0.4: {}
-
-  marked@15.0.12: {}
 
   mdast-util-definitions@6.0.0:
     dependencies:

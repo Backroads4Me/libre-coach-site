@@ -49,6 +49,16 @@ content:
         label: Description
         type: text
         required: true
+      - name: head
+        label: HTML Head Meta Tags
+        type: list
+        fields:
+          - name: tag
+            label: Tag Name
+            type: string
+          - name: attrs
+            label: Attributes
+            type: object
       - name: body
         label: Content
         type: rich-text

@@ -17,24 +17,24 @@ RV-Link transforms your RV into a smart home by bridging your RV's RV-C (Control
 
 Choose the path that fits your comfort level and goals:
 
-### 1. Pre-Assembled Kit
-Purchase a fully built, tested, and configured device. Just plug it in and configure WiFi. Perfect if you want to get up and running quickly.
-
-[Learn More & Purchase](/purchase/)
-
-### 2. DIY Build + Pre-Configured Image
+### 1. DIY Build + Pre-Configured Image
 Build your own hardware following our detailed assembly guide, then flash our custom Home Assistant OS image. Best balance of hands-on experience and convenience.
 
 [DIY Build Guide](/getting-started/diy-build/)
 
-### 3. Full Manual Installation
-Build the hardware and manually install each Home Assistant add-on. Complete control for tinkerers who want to understand every component.
+### 2. Full Manual Installation
+Build the hardware and manually install each Home Assistant add-on. Complete control for tinkerers who want to understand every component or install on existing hardware.
 
 [Manual Installation Guide](/getting-started/manual-install/)
 
+### 3. Pre-Assembled Kit (Waitlist)
+We are gauging interest in a batch of pre-built units. Join the waitlist if you prefer a plug-and-play solution.
+
+[Learn More](/purchase/)
+
 ## What's Next?
 
-- Learn more about [What is RV-Link](/getting-started/what-is-rvlink/) and how it works
+- Learn more about [What is RV-Link](/start-here/what-is-rvlink/) and how it works
 - Understand [RV-C Networks](/concepts/rvc-network/) and what devices are supported
 - Join the [Community Forum](https://forum.rvlink.app) to see what others are building
 

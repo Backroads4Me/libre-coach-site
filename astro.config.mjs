@@ -32,42 +32,38 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: 'Start Here',
+          label: 'Introduction',
           items: [
-            { label: 'Build or Buy', slug: 'purchase' },
+            { label: 'What is RV-Link?', slug: 'introduction/what-is-rvlink' },
+            { label: 'Hardware Options', slug: 'introduction/hardware-options' },
+            { label: 'Choose Your Path', slug: 'introduction/choose-your-path' },
           ],
         },
         {
-          label: 'Getting Started',
-          autogenerate: { directory: 'getting-started' },
+          label: 'Installation Guide',
+          items: [
+            { label: 'DIY Build', slug: 'installation/diy-build' },
+            { label: 'Manual Install', slug: 'installation/manual-install' },
+            { label: 'Hardware Assembly', slug: 'installation/hardware-assembly' },
+            { label: 'Connect to RV CAN Bus', slug: 'installation/can-connection' },
+            { label: 'Identify Your Switches', slug: 'installation/identifying-switches' },
+          ],
         },
         {
-          label: 'Hardware',
-          autogenerate: { directory: 'hardware' },
+          label: 'Home Assistant Setup',
+          autogenerate: { directory: 'home-assistant' },
         },
         {
-          label: 'Installation',
-          autogenerate: { directory: 'installation' },
-        },
-        {
-          label: 'Configuration',
-          autogenerate: { directory: 'configuration' },
-        },
-        {
-          label: 'Automation',
-          autogenerate: { directory: 'automation' },
-        },
-        {
-          label: 'Monitoring',
-          autogenerate: { directory: 'monitoring' },
+          label: 'Reference',
+          autogenerate: { directory: 'reference' },
         },
         {
           label: 'Troubleshooting',
           autogenerate: { directory: 'troubleshooting' },
         },
         {
-          label: 'Concepts',
-          autogenerate: { directory: 'concepts' },
+          label: 'Community',
+          autogenerate: { directory: 'community' },
         },
       ],
     }),

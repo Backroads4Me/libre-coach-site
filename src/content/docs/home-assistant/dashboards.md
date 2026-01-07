@@ -3,7 +3,7 @@ title: "Creating Custom Dashboards"
 description: "Create custom Home Assistant dashboards for your RV with examples, YAML configurations, and community-shared layouts."
 ---
 
-Once you've [identified your switches](/configuration/identifying-switches/), it's time to create beautiful, functional dashboards tailored to your RV's layout.
+Once you've [identified your switches](/installation/identifying-switches/), it's time to create beautiful, functional dashboards tailored to your RV's layout.
 
 ## Dashboard Gallery
 
@@ -308,6 +308,5 @@ Help grow the community by sharing your dashboard:
 
 ## What's Next?
 
-- Set up [automations](/automation/examples/) to make your RV smarter
-- Explore [advanced monitoring](/monitoring/energy-tracking/) for detailed insights
+- Set up [automations](/home-assistant/automation-examples/) to make your RV smarter
 - Share your dashboard on the [forum](https://forum.rvlink.app)

@@ -11,3 +11,8 @@ It is built with [Astro](https://astro.build) and the [Starlight](https://starli
 ## Contributing
 
 Pull requests are welcome! Please ensure any new content follows the existing structure and images are added to `src/assets/`.
+
+## Sponsor
+
+**[Sponsor me on GitHub](https://github.com/sponsors/Backroads4me)** (Best for long-term support)
+**[Buy me a coffee](https://buymeacoffee.com/Backroads4me)** (Best for a quick thank-you)

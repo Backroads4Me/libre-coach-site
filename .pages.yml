@@ -23,50 +23,12 @@ components:
 
 content:
   # ---------------------------------------
-  # Start Here (root docs)
+  # Introduction
   # ---------------------------------------
-  - name: start-here
-    label: "🚀 Start Here"
+  - name: introduction
+    label: "📖 Introduction"
     type: collection
-    path: src/content/docs
-    format: yaml-frontmatter
-    exclude:
-      - "*/**.md"
-      - "*/**.mdx"
-    view:
-      fields:
-        - title
-        - description
-    fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
-      - name: head
-        label: HTML Head Meta Tags
-        type: list
-        fields:
-          - name: tag
-            label: Tag Name
-            type: string
-          - name: attrs
-            label: Attributes
-            type: map
-      - name: body
-        label: Content
-        type: rich-text
-
-  # ---------------------------------------
-  # Getting Started
-  # ---------------------------------------
-  - name: getting-started
-    label: "📖 Getting Started"
-    type: collection
-    path: src/content/docs/getting-started
+    path: src/content/docs/introduction
     format: yaml-frontmatter
     view:
       fields:
@@ -111,87 +73,12 @@ content:
         type: rich-text
 
   # ---------------------------------------
-  # Hardware
+  # Home Assistant Setup
   # ---------------------------------------
-  - name: hardware
-    label: "🔌 Hardware"
+  - name: home-assistant
+    label: "🏠 Home Assistant Setup"
     type: collection
-    path: src/content/docs/hardware
-    format: yaml-frontmatter
-    view:
-      fields:
-        - title
-        - description
-    fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
-      - name: body
-        label: Content
-        type: rich-text
-
-  # ---------------------------------------
-  # Configuration
-  # ---------------------------------------
-  - name: configuration
-    label: "⚙️ Configuration"
-    type: collection
-    path: src/content/docs/configuration
-    format: yaml-frontmatter
-    view:
-      fields:
-        - title
-        - description
-    fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
-      - name: body
-        label: Content
-        type: rich-text
-
-  # ---------------------------------------
-  # Automation
-  # ---------------------------------------
-  - name: automation
-    label: "🤖 Automation"
-    type: collection
-    path: src/content/docs/automation
-    format: yaml-frontmatter
-    view:
-      fields:
-        - title
-        - description
-    fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
-      - name: body
-        label: Content
-        type: rich-text
-
-  # ---------------------------------------
-  # Monitoring
-  # ---------------------------------------
-  - name: monitoring
-    label: "📊 Monitoring"
-    type: collection
-    path: src/content/docs/monitoring
+    path: src/content/docs/home-assistant
     format: yaml-frontmatter
     view:
       fields:
@@ -236,12 +123,37 @@ content:
         type: rich-text
 
   # ---------------------------------------
-  # Core Concepts
+  # Reference
   # ---------------------------------------
-  - name: concepts
-    label: "💡 Concepts"
+  - name: reference
+    label: "📚 Reference"
     type: collection
-    path: src/content/docs/concepts
+    path: src/content/docs/reference
+    format: yaml-frontmatter
+    view:
+      fields:
+        - title
+        - description
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
+
+  # ---------------------------------------
+  # Community
+  # ---------------------------------------
+  - name: community
+    label: "👥 Community"
+    type: collection
+    path: src/content/docs/community
     format: yaml-frontmatter
     view:
       fields:

@@ -169,5 +169,5 @@ Report unsupported devices on the [forum](https://forum.rvlink.app) to help impr
 ## Learn More
 
 - [RV-C Official Specification](https://www.rv-c.com/) (technical, for advanced users)
-- [System Architecture](architecture) - How RV-Link processes RV-C messages
+- [System Architecture](/reference/system-architecture/) - How RV-Link processes RV-C messages
 - [Forum](https://forum.rvlink.app) - Ask questions and share experiences

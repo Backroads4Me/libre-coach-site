@@ -3,11 +3,13 @@ title: "Full Manual Installation"
 description: "Advanced installation guide for manually setting up Mosquitto, CAN-to-MQTT Bridge, and Node-RED on Home Assistant OS."
 ---
 
-This guide is for advanced users who want complete control over their installation. You'll build the hardware and manually install each Home Assistant add-on.
+This guide is for advanced users who want complete control over their installation or are installing RV Link onto an existing Home Assistant instance (e.g., on a NUC or Yellow).
+
+Unlike the "Pre-Configured Image" which installs the OS and all Add-ons for you, this guide assumes you are maintaining each component separately. You will manually install Mosquitto, Node-RED, and the Bridge as individual Add-ons.
 
 ## Prerequisites
 
-- **Assembled hardware** following the [Hardware Assembly Guide](/hardware/assembly/)
+- **Assembled hardware** following the [Hardware Assembly Guide](/installation/hardware-assembly/)
 - **Home Assistant OS installed** on your NVME drive
 - **Basic understanding** of Home Assistant add-ons and YAML configuration
 - **SSH access** configured (optional but helpful)
@@ -240,8 +242,8 @@ Then reboot.
 
 ## What's Next?
 
-- [Identify your switches](/configuration/identifying-switches/)
-- [Create custom dashboards](/configuration/dashboards/)
+- [Identify your switches](/installation/identifying-switches/)
+- [Create custom dashboards](/home-assistant/dashboards/)
 - [Join the community](https://forum.rvlink.app)
 
 ## Advanced Configuration

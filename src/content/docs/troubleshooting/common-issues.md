@@ -88,6 +88,24 @@ Having trouble with RV-Link? Check these common issues and solutions before post
 4. **Check instance numbers**: Devices may be using unusual instance IDs
 5. **Post on forum**: Share which devices are missing to help improve RV-Link
 
+### Duplicate or "Ghost" Entities
+
+**Symptom**: You see `switch.kitchen_light` and `switch.kitchen_light_2`, or entities that don't exist.
+
+**Solutions**:
+1.  **Check MQTT Retention**: If you renamed a device, the old "retained" MQTT message might still be there. Use "MQTT Explorer" (PC app) to clear old topics.
+2.  **Restart Home Assistant**: Sometimes the registry needs a flush.
+3.  **Check Node-RED**: Ensure you don't have two flows publishing to the same topic.
+
+### Intermittent Data (Flaky Connection)
+
+**Symptom**: Values update sometimes, or "lag" significantly.
+
+**Causes**:
+1.  **Termination Resistors**: The #1 cause. Ensure you have 60 ohms resistance between CAN-H and CAN-L (with power off). If you measure 120 ohms, you are missing a terminator. If you measure 40 ohms, you have too many.
+2.  **Cable Length**: Drop cables (from the main trunk to your Pi) should be short (< 6ft).
+3.  **Loose Connections**: Screw terminals on the HAT can vibrate loose in an RV. Retighten them.
+
 ## Performance Issues
 
 ### Slow Dashboard Response
@@ -286,4 +304,5 @@ Home Assistant has built-in backup:
 
 - [Forum](https://forum.rvlink.app) - Stay informed and get help
 - [GitHub](https://github.com/Backroads4Me) - Follow development
-- [Sponsor](https://github.com/sponsors/Backroads4Me) - Support ongoing development
+- [GitHub Sponsors](https://github.com/sponsors/Backroads4me) - Monthly support
+- [Buy Me a Coffee](https://buymeacoffee.com/Backroads4me) - One-time support

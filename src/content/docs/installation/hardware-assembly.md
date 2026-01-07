@@ -168,8 +168,8 @@ Before powering on:
 
 Your hardware is now assembled! Continue to:
 
-- [Flash the pre-configured image](/getting-started/diy-build/#software-installation) (DIY path)
-- [Manual software installation](/getting-started/manual-install/) (Advanced path)
+- [Flash the pre-configured image](/installation/diy-build/#software-installation) (DIY path)
+- [Manual software installation](/installation/manual-install/) (Advanced path)
 - [Connect to your RV's CAN network](/installation/can-connection/)
 
 ## Troubleshooting

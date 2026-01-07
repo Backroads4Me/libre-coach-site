@@ -6,116 +6,233 @@ media:
   input: src/assets
   output: /src/assets
 
-# Define reusable field sets using YAML anchors
-x-standard-fields: &standard-fields
-  - { name: title, label: Title, type: string, required: true }
-  - { name: description, label: Description, type: text, required: true }
-  - { name: body, label: Content, type: rich-text }
+components:
+  metadata:
+    label: Page Metadata
+    type: object
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
 
-x-view-fields: &view-fields
-  - { name: title, label: Title, type: string }
-  - { name: description, label: Description, type: text }
-
-collections:
+content:
   # Quick start pages in root docs folder
   - name: start-here
     label: 🚀 Start Here
-    path: src/content/docs
     type: collection
-    extension: mdx
-    format: frontmatter
-    filter:
-      field: path
-      operator: matches
-      value: "^(gallery|purchase|index)\\.mdx$"
+    path: src/content/docs
+    format: yaml-frontmatter
+    exclude:
+      - getting-started/**
+      - installation/**
+      - hardware/**
+      - configuration/**
+      - automation/**
+      - monitoring/**
+      - troubleshooting/**
+      - concepts/**
     view:
-      fields: *view-fields
-    fields: *standard-fields
+      fields:
+        - name: title
+        - name: description
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
 
   # Getting Started guides
   - name: getting-started
     label: 📖 Getting Started
-    path: src/content/docs/getting-started
     type: collection
-    extension: md
-    format: frontmatter
+    path: src/content/docs/getting-started
+    format: yaml-frontmatter
     view:
-      fields: *view-fields
-    fields: *standard-fields
+      fields:
+        - name: title
+        - name: description
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
 
   # Installation guides
   - name: installation
     label: 🛠️ Installation
-    path: src/content/docs/installation
     type: collection
-    extension: md
-    format: frontmatter
+    path: src/content/docs/installation
+    format: yaml-frontmatter
     view:
-      fields: *view-fields
-    fields: *standard-fields
+      fields:
+        - name: title
+        - name: description
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
 
   # Hardware documentation
   - name: hardware
     label: 🔌 Hardware
-    path: src/content/docs/hardware
     type: collection
-    extension: mdx
-    format: frontmatter
+    path: src/content/docs/hardware
+    format: yaml-frontmatter
     view:
-      fields: *view-fields
-    fields: *standard-fields
+      fields:
+        - name: title
+        - name: description
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
 
   # Configuration guides
   - name: configuration
     label: ⚙️ Configuration
-    path: src/content/docs/configuration
     type: collection
-    extension: md
-    format: frontmatter
+    path: src/content/docs/configuration
+    format: yaml-frontmatter
     view:
-      fields: *view-fields
-    fields: *standard-fields
+      fields:
+        - name: title
+        - name: description
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
 
   # Automation examples
   - name: automation
     label: 🤖 Automation
-    path: src/content/docs/automation
     type: collection
-    extension: md
-    format: frontmatter
+    path: src/content/docs/automation
+    format: yaml-frontmatter
     view:
-      fields: *view-fields
-    fields: *standard-fields
+      fields:
+        - name: title
+        - name: description
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
 
   # Monitoring features
   - name: monitoring
     label: 📊 Monitoring
-    path: src/content/docs/monitoring
     type: collection
-    extension: md
-    format: frontmatter
+    path: src/content/docs/monitoring
+    format: yaml-frontmatter
     view:
-      fields: *view-fields
-    fields: *standard-fields
+      fields:
+        - name: title
+        - name: description
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
 
   # Troubleshooting guides
   - name: troubleshooting
     label: 🔧 Troubleshooting
-    path: src/content/docs/troubleshooting
     type: collection
-    extension: md
-    format: frontmatter
+    path: src/content/docs/troubleshooting
+    format: yaml-frontmatter
     view:
-      fields: *view-fields
-    fields: *standard-fields
+      fields:
+        - name: title
+        - name: description
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
 
   # Core concepts
   - name: concepts
     label: 💡 Concepts
-    path: src/content/docs/concepts
     type: collection
-    extension: md
-    format: frontmatter
+    path: src/content/docs/concepts
+    format: yaml-frontmatter
     view:
-      fields: *view-fields
-    fields: *standard-fields
+      fields:
+        - name: title
+        - name: description
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+        required: true
+      - name: body
+        label: Content
+        type: rich-text

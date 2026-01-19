@@ -14,27 +14,28 @@ hero:
       variant: primary
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
+import { CardGrid } from "@astrojs/starlight/components";
+import Card from "starlight-plugin-icons/components/Card.astro";
 
 ## Everything You Need
 
 <CardGrid>
-  <Card title="Total Control" icon="mdi:mobile-phone-text">
+  <Card title="Total Control" icon="i-mdi:remote" bordered>
     Manage lights, shades, locks, pumps, and other systems from a single
     interface. Works completely locally—no cloud dependency required.
   </Card>
 
-  <Card title="Real-Time Monitoring" icon="seti:smarty">
-    Live updates for tank levels, battery voltage, temperature, and sensor
-    status. Set alerts for critical thresholds.
-  </Card>
+<Card title="Real-Time Monitoring" icon="i-mdi:pulse" bordered>
+  Live updates for tank levels, battery voltage, temperature, and sensor status.
+  Set alerts for critical thresholds.
+</Card>
 
-  <Card title="Auto-Discovery" icon="puzzle">
-    Automatically finds all RV-C devices on your network. Works with any RV-C
-    enabled RV.
-  </Card>
+<Card title="Auto-Discovery" icon="i-mdi:magnify-scan" bordered>
+  Automatically finds all RV-C devices on your network. Works with any RV-C
+  enabled RV.
+</Card>
 
-  <Card title="Open Source" icon="mdi:open-source-initiative">
+  <Card title="Open Source" icon="i-mdi:open-source-initiative" bordered>
     Built on Home Assistant, Node-RED, and MQTT. Fully customizable and
     extensible to fit your needs.
   </Card>
@@ -43,14 +44,14 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
 ## Choose Your Path
 
 <CardGrid>
-  <Card title="DIY Build" icon="mdi:build">
+  <Card title="DIY Build" icon="i-mdi:hammer-wrench" bordered>
     Build your own hardware with our detailed guides and pre-configured software image.
 
     [Build Guide →](/installation/diy-build/)
 
   </Card>
 
-  <Card title="Pre-Assembled Kit (Waitlist)" icon="mdi:package-variant">
+  <Card title="Pre-Assembled Kit (Waitlist)" icon="i-mdi:package-variant-closed-check" bordered>
     Join the waitlist for a ready-to-use unit, fully tested and configured.
 
     [Join Waitlist →](/introduction/hardware-options/)

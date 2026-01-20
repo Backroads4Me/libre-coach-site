@@ -1,0 +1,89 @@
+/* src/styles/custom.css */
+
+/* ==========================================
+      GLOBAL BASE (Shared by both modes)
+   ========================================== */
+:root {
+  /* Brand Typography */
+  --sl-font-system: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --sl-font-system-mono: 'Fira Code', ui-monospace, monospace;
+
+/* How the Shades Are Used
+Shade     Usage
+*-low     Background fill
+* (base)  Border color
+*-high    Text and icon color */
+
+
+  /* Brand Accents (Home Assistant Blue & Logo Orange) */
+  /* --sl-color-accent-low: #00374a; */
+  /* --sl-color-accent: #0b85aaff; */
+  /* --sl-color-accent-high: #d1f2fd; */
+  /* --sl-color-orange: #f38131; */
+  
+/* Using Home Assistant Blue for default buttons */
+/* Default state */
+  /* --sl-color-accent-600: #000000; */
+  /* Hover state (slightly darker) */
+  /* --sl-color-accent-700: #15a8d9; */
+  /* Pressed state */
+  /* --sl-color-accent-800: #0e86ae; */
+  
+  /* Text color inside the button */
+  /* --sl-color-text-invert: #ffffff; */
+
+}
+
+/* ==========================================
+      DARK MODE (The Default Theme)
+   ========================================== */
+:root,
+[data-theme='dark'] {
+  /* Grayscale Palette (Dark) */
+  /* --sl-color-white: hsl(0, 0%, 100%); */
+  /* --sl-color-gray-1: hsl(224, 20%, 94%); */
+  /* --sl-color-gray-2: hsl(224, 6%, 77%); */
+  /* --sl-color-gray-3: hsl(224, 6%, 56%); */
+  /* --sl-color-gray-4: hsl(224, 7%, 36%); */
+  /* --sl-color-gray-5: hsl(224, 10%, 23%); */
+  /* --sl-color-gray-6: hsl(224, 14%, 16%); */
+  /* --sl-color-black: hsl(224, 10%, 10%); */
+
+  /* Backgrounds & Surfaces */
+  /* --sl-color-bg: var(--sl-color-black); */
+  /* --sl-color-bg-nav: var(--sl-color-gray-6); */
+  /* --sl-color-bg-sidebar: var(--sl-color-gray-6); */
+  /* --sl-color-bg-inline-code: var(--sl-color-gray-5); */
+
+  /* Text & Borders */
+  /* --sl-color-text: var(--sl-color-gray-2); */
+  /* --sl-color-text-accent: var(--sl-color-accent-high); */
+  /* --sl-color-hairline: var(--sl-color-gray-5); */
+  /* --sl-color-border-nav: var(--sl-color-gray-5); */
+}
+
+/* ==========================================
+      LIGHT MODE OVERRIDES
+   ========================================== */
+:root[data-theme='light'] {
+  /* Grayscale Palette (Flipped for Light) */
+  /* --sl-color-white: hsl(224, 10%, 10%); */
+  /* --sl-color-gray-1: hsl(224, 14%, 16%); */
+  /* --sl-color-gray-2: hsl(224, 10%, 23%); */
+  /* --sl-color-gray-5: hsl(224, 6%, 77%); */
+  /* --sl-color-gray-6: hsl(224, 20%, 94%); */
+  /* --sl-color-black: hsl(0, 0%, 100%); */
+
+  /* Backgrounds & Surfaces */
+  /* --sl-color-bg: var(--sl-color-black); */
+  /* --sl-color-bg-nav: #ffffff; */
+  /* --sl-color-bg-sidebar: #fcf8f2; */
+  /* --sl-color-bg-inline-code: var(--sl-color-gray-6); */
+
+  /* Text & Borders */
+  /* --sl-color-text: var(--sl-color-gray-2); */
+  /* --sl-color-text-accent: var(--sl-color-accent); */
+  /* --sl-color-hairline: var(--sl-color-gray-5); */
+  /* --sl-color-border-nav: var(--sl-color-gray-5); */
+}
+

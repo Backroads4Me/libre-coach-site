@@ -17,7 +17,8 @@ export default defineConfig({
         plugins: [
           starlightThemeSix({
             //optional
-            footerText: "Libre Coach - Smarthome Control for Your RV | [GitHub](https://github.com/Backroads4Me) | [Community Forum](https://forum.LibreCoach.com)",
+            footerText:
+              "Libre Coach - Smarthome Control for Your RV | [GitHub](https://github.com/Backroads4Me) | [Community Forum](https://forum.LibreCoach.com)",
           }),
         ],
         customCss: ["./src/styles/custom.css"],

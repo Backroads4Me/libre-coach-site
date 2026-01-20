@@ -1,0 +1,42 @@
+{
+    "name": "Your Site Name",
+    "short_name": "Short Name",
+    "description": "Your site description",
+    "start_url": "/",
+    "scope": "/",
+    "background_color": "#0E0E0E",
+    "theme_color": "#0E0E0E",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "categories": [
+        "productivity",
+        "developer"
+    ],
+    "lang": "en",
+    "icons": [
+        {
+            "src": "/Six.StarlightTheme/icon-64.png",
+            "type": "image/png",
+            "sizes": "64x64",
+            "purpose": "any"
+        },
+        {
+            "src": "/Six.StarlightTheme/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/Six.StarlightTheme/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/Six.StarlightTheme/favicon.svg",
+            "type": "image/svg+xml",
+            "sizes": "any",
+            "purpose": "any"
+        }
+    ]
+}

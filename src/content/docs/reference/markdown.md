@@ -1,7 +1,7 @@
 ---
 title: Starlight Feature Reference
 description: A comprehensive guide to all Markdown and Starlight features for Libre Coach documentation.
-slug: markdown
+filename: markdown
 # Customize the table of contents
 tableOfContents:
   minHeadingLevel: 2
@@ -449,11 +449,11 @@ librecoach:
 
 ### Image with Alt Text
 
-![RV-C network diagram showing CAN bus connections between various RV systems](../../../../public/favicon-64x64.png)
+![RV-C network diagram showing CAN bus connections between various RV systems](../../../../public/icons/favicon-64.png)
 
 ### Linked Image
 
-[![Home Assistant Logo](../../../../public/favicon-64x64.png)
+[![Home Assistant Logo](../../../../public/icons/favicon-64.png)
 ](https://www.home-assistant.io/)
 
 ### Image from URL

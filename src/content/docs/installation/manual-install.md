@@ -1,7 +1,7 @@
 ---
 title: "Full Manual Installation"
 description: "Advanced installation guide for manually setting up Mosquitto, CAN-to-MQTT Bridge, and Node-RED on Home Assistant OS."
-slug: manual-install
+filename: manual-install
 sidebar:
   order: 2
 ---

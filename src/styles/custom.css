@@ -53,14 +53,26 @@ main > .markdown-wrapper > .sl-markdown-content {
   padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
 }
 
-.six-hero {
+/* Default (light mode) */
+html {
+  --six-hero-bg: url("/hero-light.svg");
+}
+
+/* Dark mode */
+html[data-theme="dark"] {
+  --six-hero-bg: url("/hero-dark.svg");
+}
+
+/* Override HeroX inline background */
+:where(.six-hero.six-hero-with-background) {
   background-image: var(--six-hero-bg) !important;
 }
 
-html[data-theme="light"] {
-  --six-hero-bg: url("/assets/hero-light.svg");
+.six-hero.six-hero-with-background {
+  background-image: var(--six-hero-bg) !important;
+  border: 2px solid var(--sl-color-gray-3);
+  border-radius: 2rem; /* match your HeroX radius */
+  box-sizing: border-box;
 }
 
-html[data-theme="dark"] {
-  --six-hero-bg: url("/assets/hero-dark.svg");
-}
+

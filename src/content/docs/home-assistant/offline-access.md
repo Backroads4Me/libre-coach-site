@@ -1,7 +1,7 @@
 ---
 title: Local Access Without Internet
 description: Access Home Assistant locally without internet or Wi-Fi fighting your phone
-slug: offline-access
+filename: offline-access
 sidebar:
   order: 100
 draft: false

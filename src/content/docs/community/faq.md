@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions
 description: "Common questions about Libre Coach, including the name, compatibility, and project goals."
-slug: faq
+filename: faq
 sidebar:
   order: 1
 ---

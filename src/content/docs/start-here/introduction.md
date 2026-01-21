@@ -1,7 +1,7 @@
 ---
 title: "Welcome to Libre Coach"
 description: "Introduction to Libre Coach featuring three installation paths: pre-assembled kit, DIY build, or full manual installation."
-slug: introduction
+filename: introduction
 ---
 
 Libre Coach transforms your RV into a smart home by bridging your RV's RV-C (Controller Area Network) to Home Assistant. Control and monitor everything from lights and shades to tanks and batteries—all from your phone or tablet.

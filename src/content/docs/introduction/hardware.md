@@ -1,7 +1,7 @@
 ---
 title: Hardware Options
 description: Build it yourself or join the waitlist for a pre-assembled unit.
-slug: hardware
+filename: hardware
 sidebar:
   order: 2
 ---

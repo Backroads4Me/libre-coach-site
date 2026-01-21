@@ -1,7 +1,7 @@
 ---
 title: "Creating Custom Dashboards"
 description: "Create custom Home Assistant dashboards for your RV with examples, YAML configurations, and community-shared layouts."
-slug: dashboards
+filename: dashboards
 sidebar:
   order: 1
 ---

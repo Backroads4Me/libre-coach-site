@@ -1,7 +1,7 @@
 ---
 title: CAN Connection Guide
 description: "Guide to physically connecting Libre Coach hardware to your RV's CAN bus network including safety precautions, locating ports, and verification."
-slug: can-connection
+filename: can-connection
 sidebar:
   order: 4
 ---

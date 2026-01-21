@@ -12,12 +12,12 @@ content:
     label: "👥 Community"
     type: collection
     path: src/content/docs/community
-    filename: "{primary}.md"
+    filename: "{filename}.md"
     view:
-      primary: slug
-      fields: [slug, title, draft]
+      primary: filename
+      fields: [filename, title, draft]
     fields:
-      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: filename, label: Filename, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, required: true }
       - name: sidebar
@@ -33,12 +33,12 @@ content:
     label: "🏠 Home Assistant Setup"
     type: collection
     path: src/content/docs/home-assistant
-    filename: "{primary}.md"
+    filename: "{filename}.md"
     view:
-      primary: slug
-      fields: [slug, title, draft]
+      primary: filename
+      fields: [filename, title, draft]
     fields:
-      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: filename, label: Filename, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, required: true }
       - name: sidebar
@@ -54,12 +54,12 @@ content:
     label: "🛠️ Installation"
     type: collection
     path: src/content/docs/installation
-    filename: "{primary}.md"
+    filename: "{filename}.md"
     view:
-      primary: slug
-      fields: [slug, title, draft]
+      primary: filename
+      fields: [filename, title, draft]
     fields:
-      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: filename, label: Filename, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, required: true }
       - name: sidebar
@@ -75,12 +75,12 @@ content:
     label: "📖 Introduction"
     type: collection
     path: src/content/docs/introduction
-    filename: "{primary}.md"
+    filename: "{filename}.md"
     view:
-      primary: slug
-      fields: [slug, title, draft]
+      primary: filename
+      fields: [filename, title, draft]
     fields:
-      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: filename, label: Filename, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, required: true }
       - name: sidebar
@@ -96,12 +96,12 @@ content:
     label: "📚 Reference"
     type: collection
     path: src/content/docs/reference
-    filename: "{primary}.md"
+    filename: "{filename}.md"
     view:
-      primary: slug
-      fields: [slug, title, draft]
+      primary: filename
+      fields: [filename, title, draft]
     fields:
-      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: filename, label: Filename, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, required: true }
       - name: sidebar
@@ -117,12 +117,12 @@ content:
     label: "🚀 Start Here"
     type: collection
     path: src/content/docs/start-here
-    filename: "{primary}.md"
+    filename: "{filename}.md"
     view:
-      primary: slug
-      fields: [slug, title, draft]
+      primary: filename
+      fields: [filename, title, draft]
     fields:
-      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: filename, label: Filename, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, required: true }
       - name: sidebar
@@ -138,12 +138,12 @@ content:
     label: "🔧 Troubleshooting"
     type: collection
     path: src/content/docs/troubleshooting
-    filename: "{primary}.md"
+    filename: "{filename}.md"
     view:
-      primary: slug
-      fields: [slug, title, draft]
+      primary: filename
+      fields: [filename, title, draft]
     fields:
-      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: filename, label: Filename, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, required: true }
       - name: sidebar

@@ -7,23 +7,18 @@ template: splash
 import { CardGrid } from "@astrojs/starlight/components";
 import Card from "starlight-plugin-icons/components/Card.astro";
 import { HeroX } from "@six-tech/starlight-theme-six/components";
-import backgroundDesktopLight from "../../assets/hero-light.svg";
-import backgroundDesktopDark from "../../assets/hero-dark.svg";
+import background from "../../../public/hero-light.svg";
 
 <HeroX
   title="Libre Coach"
   tagline="Smart control for your RV. Mobile access, auto-discovery, real-time monitoring, and beautiful dashboards—all local, all open source."
   titleColor="#0b85aaff"
-  taglineColor="#000000"
-  height="20vh"
+  taglineColor="var(--sl-color-text)"
+  height="400px"
   px="12rem"
   radius="2rem"
   image={{
-    background: backgroundDesktopLight,
-    backgroundLight: backgroundDesktopLight,
-    backgroundDark: backgroundDesktopDark,
-    backgroundMobileLight: backgroundDesktopLight,
-    backgroundMobileDark: backgroundDesktopDark,
+    background: background,
     alt: "Hero background image",
     backgroundSize: "cover",
     backgroundPosition: "center",

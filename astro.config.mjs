@@ -25,9 +25,9 @@ export default defineConfig({
         components: {
           Card: "starlight-plugin-icons/components/Card.astro",
         },
-        favicon: "/favicon-64x64.png",
+        favicon: "/icons/favicon-64.png",
         logo: {
-          src: "./src/assets/logo.svg",
+          src: "./public/logo.svg",
           replacesTitle: false,
         },
         lastUpdated: false,

@@ -1,39 +1,40 @@
 {
-    "name": "Your Site Name",
-    "short_name": "Short Name",
-    "description": "Your site description",
+    "name": "Libre Coach Documentation",
+    "short_name": "Libre Coach",
+    "description": "Smart control for your RV. Mobile access, auto-discovery, real-time monitoring, and beautiful dashboards—all local, all open source.",
     "start_url": "/",
     "scope": "/",
     "background_color": "#0E0E0E",
-    "theme_color": "#0E0E0E",
+    "theme_color": "#0b85aaff",
     "display": "standalone",
     "orientation": "portrait-primary",
     "categories": [
         "productivity",
+        "utilities",
         "developer"
     ],
     "lang": "en",
     "icons": [
         {
-            "src": "/Six.StarlightTheme/icon-64.png",
+            "src": "/icons/favicon-64.png",
             "type": "image/png",
             "sizes": "64x64",
             "purpose": "any"
         },
         {
-            "src": "/Six.StarlightTheme/icon-192.png",
+            "src": "/icons/favicon-192.png",
             "type": "image/png",
             "sizes": "192x192",
             "purpose": "any maskable"
         },
         {
-            "src": "/Six.StarlightTheme/icon-512.png",
+            "src": "/icons/favicon-512.png",
             "type": "image/png",
             "sizes": "512x512",
             "purpose": "any maskable"
         },
         {
-            "src": "/Six.StarlightTheme/favicon.svg",
+            "src": "/icons/favicon.svg",
             "type": "image/svg+xml",
             "sizes": "any",
             "purpose": "any"

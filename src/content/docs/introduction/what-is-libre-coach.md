@@ -1,7 +1,7 @@
 ---
 title: "What is Libre Coach?"
 description: "Libre Coach bridges your RV's CAN bus to Home Assistant, enabling control and monitoring of lights, climate, tanks, and power systems."
-slug: what-is-libre-coach
+filename: what-is-libre-coach
 sidebar:
   order: 1
 ---

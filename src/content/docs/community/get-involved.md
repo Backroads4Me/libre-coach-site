@@ -1,6 +1,7 @@
 ---
 title: Get Involved
 description: "Libre Coach is an open-source project built by RVers, for RVers."
+slug: get-involved
 ---
 
 Libre Coach is an open-source project. We are building the smart RV system we always wanted—extensible, private, and repairable.

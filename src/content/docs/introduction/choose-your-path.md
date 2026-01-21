@@ -1,6 +1,7 @@
 ---
 title: Choose Your Path
 description: Compare the three ways to get Libre Coach and choose the best option for your skill level and goals.
+slug: choose-your-path
 sidebar:
   order: 3
 ---

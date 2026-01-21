@@ -1,6 +1,7 @@
 ---
 title: "DIY Build Guide"
 description: "Step-by-step guide to building your own Libre Coach hardware and flashing the pre-configured Home Assistant OS image."
+slug: build
 sidebar:
   order: 1
 ---

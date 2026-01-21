@@ -1,6 +1,7 @@
 ---
 title: Starlight Feature Reference
 description: A comprehensive guide to all Markdown and Starlight features for Libre Coach documentation.
+slug: markdown
 # Customize the table of contents
 tableOfContents:
   minHeadingLevel: 2

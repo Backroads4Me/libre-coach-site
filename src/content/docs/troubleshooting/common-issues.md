@@ -1,6 +1,7 @@
 ---
 title: "Common Issues and Solutions"
 description: "Solutions to common Libre Coach issues including CAN connection problems, device discovery failures, and WiFi connectivity."
+slug: common-issues
 ---
 
 Having trouble with Libre Coach? Check these common issues and solutions before posting on the forum.

@@ -1,6 +1,7 @@
 ---
 title: "Hardware Assembly Guide"
 description: "Detailed hardware assembly instructions with photos for building Libre Coach using Raspberry Pi 5, CAN HAT, and NVMe components."
+slug: assembly
 sidebar:
   order: 3
 ---

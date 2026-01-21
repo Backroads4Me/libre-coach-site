@@ -1,6 +1,7 @@
 ---
 title: "Identifying Your Switches"
 description: "Walk through your RV to identify and map auto-discovered switches to their physical controls using Home Assistant's dashboard."
+slug: idnetify-switches
 sidebar:
   order: 5
 ---

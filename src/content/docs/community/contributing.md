@@ -1,6 +1,7 @@
 ---
 title: Contributing Guide
 description: "How to contribute to Libre Coach: Code, Documentation, Testing, and Community Support."
+slug: contributing
 ---
 
 First off, thank you for considering contributing to Libre Coach! It's people like you that make open source tools great.

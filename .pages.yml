@@ -1,7 +1,7 @@
 # Pages CMS Configuration for Libre Coach Documentation Site
 # https://pagescms.org
 
-name: Libre Coach Docs
+# Libre Coach Docs
 
 media:
   input: src/assets
@@ -29,6 +29,7 @@ content:
     label: "📖 Introduction"
     type: collection
     path: src/content/docs/introduction
+    filename: "{slug}"
     format: yaml-frontmatter
     view:
       fields:
@@ -47,8 +48,9 @@ content:
         type: text
         required: true
       - name: slug
-        label: URL Slug (optional)
+        label: URL Slug
         type: string
+        required: true
       - name: sidebar
         label: Sidebar Settings
         type: object
@@ -70,18 +72,7 @@ content:
                 label: Badge Style
                 type: select
                 options:
-                  - label: Note
-                    value: note
-                  - label: Tip
-                    value: tip
-                  - label: Caution
-                    value: caution
-                  - label: Danger
-                    value: danger
-                  - label: Success
-                    value: success
-                  - label: Default
-                    value: default
+                  values: [note, tip, caution, danger, success, default]
       - name: draft
         label: Draft (hide from production)
         type: boolean
@@ -105,6 +96,7 @@ content:
     label: "🛠️ Installation"
     type: collection
     path: src/content/docs/installation
+    filename: "{slug}"
     format: yaml-frontmatter
     view:
       fields:
@@ -123,8 +115,9 @@ content:
         type: text
         required: true
       - name: slug
-        label: URL Slug (optional)
+        label: URL Slug
         type: string
+        required: true
       - name: sidebar
         label: Sidebar Settings
         type: object
@@ -146,18 +139,7 @@ content:
                 label: Badge Style
                 type: select
                 options:
-                  - label: Note
-                    value: note
-                  - label: Tip
-                    value: tip
-                  - label: Caution
-                    value: caution
-                  - label: Danger
-                    value: danger
-                  - label: Success
-                    value: success
-                  - label: Default
-                    value: default
+                  values: [note, tip, caution, danger, success, default]
       - name: draft
         label: Draft (hide from production)
         type: boolean
@@ -181,6 +163,7 @@ content:
     label: "🏠 Home Assistant Setup"
     type: collection
     path: src/content/docs/home-assistant
+    filename: "{slug}"
     format: yaml-frontmatter
     view:
       fields:
@@ -199,8 +182,9 @@ content:
         type: text
         required: true
       - name: slug
-        label: URL Slug (optional)
+        label: URL Slug
         type: string
+        required: true
       - name: sidebar
         label: Sidebar Settings
         type: object
@@ -222,18 +206,7 @@ content:
                 label: Badge Style
                 type: select
                 options:
-                  - label: Note
-                    value: note
-                  - label: Tip
-                    value: tip
-                  - label: Caution
-                    value: caution
-                  - label: Danger
-                    value: danger
-                  - label: Success
-                    value: success
-                  - label: Default
-                    value: default
+                  values: [note, tip, caution, danger, success, default]
       - name: draft
         label: Draft (hide from production)
         type: boolean
@@ -257,6 +230,7 @@ content:
     label: "🔧 Troubleshooting"
     type: collection
     path: src/content/docs/troubleshooting
+    filename: "{slug}"
     format: yaml-frontmatter
     view:
       fields:
@@ -275,8 +249,9 @@ content:
         type: text
         required: true
       - name: slug
-        label: URL Slug (optional)
+        label: URL Slug
         type: string
+        required: true
       - name: sidebar
         label: Sidebar Settings
         type: object
@@ -298,18 +273,7 @@ content:
                 label: Badge Style
                 type: select
                 options:
-                  - label: Note
-                    value: note
-                  - label: Tip
-                    value: tip
-                  - label: Caution
-                    value: caution
-                  - label: Danger
-                    value: danger
-                  - label: Success
-                    value: success
-                  - label: Default
-                    value: default
+                  values: [note, tip, caution, danger, success, default]
       - name: draft
         label: Draft (hide from production)
         type: boolean
@@ -333,6 +297,7 @@ content:
     label: "📚 Reference"
     type: collection
     path: src/content/docs/reference
+    filename: "{slug}"
     format: yaml-frontmatter
     view:
       fields:
@@ -351,8 +316,9 @@ content:
         type: text
         required: true
       - name: slug
-        label: URL Slug (optional)
+        label: URL Slug
         type: string
+        required: true
       - name: sidebar
         label: Sidebar Settings
         type: object
@@ -374,18 +340,7 @@ content:
                 label: Badge Style
                 type: select
                 options:
-                  - label: Note
-                    value: note
-                  - label: Tip
-                    value: tip
-                  - label: Caution
-                    value: caution
-                  - label: Danger
-                    value: danger
-                  - label: Success
-                    value: success
-                  - label: Default
-                    value: default
+                  values: [note, tip, caution, danger, success, default]
       - name: draft
         label: Draft (hide from production)
         type: boolean
@@ -409,6 +364,7 @@ content:
     label: "👥 Community"
     type: collection
     path: src/content/docs/community
+    filename: "{slug}"
     format: yaml-frontmatter
     view:
       fields:
@@ -427,8 +383,9 @@ content:
         type: text
         required: true
       - name: slug
-        label: URL Slug (optional)
+        label: URL Slug
         type: string
+        required: true
       - name: sidebar
         label: Sidebar Settings
         type: object
@@ -450,18 +407,7 @@ content:
                 label: Badge Style
                 type: select
                 options:
-                  - label: Note
-                    value: note
-                  - label: Tip
-                    value: tip
-                  - label: Caution
-                    value: caution
-                  - label: Danger
-                    value: danger
-                  - label: Success
-                    value: success
-                  - label: Default
-                    value: default
+                  values: [note, tip, caution, danger, success, default]
       - name: draft
         label: Draft (hide from production)
         type: boolean

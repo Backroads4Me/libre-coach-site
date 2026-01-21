@@ -29,7 +29,7 @@ content:
     label: "📖 Introduction"
     type: collection
     path: src/content/docs/introduction
-    filename: "{slug}"
+    filename: "{slug}.md"
     format: yaml-frontmatter
     view:
       fields:
@@ -97,7 +97,7 @@ content:
     label: "🛠️ Installation"
     type: collection
     path: src/content/docs/installation
-    filename: "{slug}"
+    filename: "{slug}.md"
     format: yaml-frontmatter
     view:
       fields:
@@ -165,7 +165,7 @@ content:
     label: "🏠 Home Assistant Setup"
     type: collection
     path: src/content/docs/home-assistant
-    filename: "{slug}"
+    filename: "{slug}.md"
     format: yaml-frontmatter
     view:
       fields:
@@ -233,7 +233,7 @@ content:
     label: "🔧 Troubleshooting"
     type: collection
     path: src/content/docs/troubleshooting
-    filename: "{slug}"
+    filename: "{slug}.md"
     format: yaml-frontmatter
     view:
       fields:
@@ -301,7 +301,7 @@ content:
     label: "📚 Reference"
     type: collection
     path: src/content/docs/reference
-    filename: "{slug}"
+    filename: "{slug}.md"
     format: yaml-frontmatter
     view:
       fields:
@@ -369,7 +369,7 @@ content:
     label: "👥 Community"
     type: collection
     path: src/content/docs/community
-    filename: "{slug}"
+    filename: "{slug}.md"
     format: yaml-frontmatter
     view:
       fields:

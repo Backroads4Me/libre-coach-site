@@ -25,7 +25,7 @@ content:
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, title, draft]
+      fields: [title, slug, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
@@ -46,7 +46,7 @@ content:
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, title, draft]
+      fields: [title, slug, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
@@ -67,7 +67,7 @@ content:
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, title, draft]
+      fields: [title, slug, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
@@ -88,7 +88,7 @@ content:
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, title, draft]
+      fields: [title, slug, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
@@ -109,7 +109,7 @@ content:
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, title, draft]
+      fields: [title, slug, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }
@@ -130,7 +130,7 @@ content:
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, title, draft]
+      fields: [title, slug, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
       - { name: title, label: Title, type: string, required: true }

@@ -8,7 +8,6 @@ draft: false
 tableOfContents: true
 lastUpdated: true
 ---
-````markdown
 # Offline-Local Wi-Fi Network for Home Assistant
 
 **Goal:** Access Home Assistant reliably from your phone **without** needing working internet and **without** your phone fighting the Wi-Fi connection.
@@ -74,13 +73,13 @@ As a result:
 
 ### Traffic flow
 
-```
+
 Local traffic:
 Phone ──Wi-Fi──► Home Assistant
 
 Internet traffic:
 Phone ──Cellular──► Internet
-```
+
 
 ---
 
@@ -195,15 +194,15 @@ If the router hands out a **default gateway**, phones will expect internet and m
 
 Instead of:
 
-```
+
 http://homeassistant.local:8123
-```
+
 
 Use:
 
-```
+
 http://<HA-IP>:8123
-```
+
 
 Offline networks and mDNS are unreliable.
 
@@ -234,4 +233,3 @@ This ensures local control during **power and internet outages**.
 - Phones treat the Wi-Fi as local-only
 - Cellular handles internet, Wi-Fi handles Home Assistant
 - Simple, reliable, and offline-proof
-````

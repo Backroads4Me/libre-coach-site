@@ -1,431 +1,121 @@
 # Pages CMS Configuration for Libre Coach Documentation Site
-# https://pagescms.org
-
-# Libre Coach Docs
-
 media:
   input: src/assets
   output: src/assets
 
+# ---------------------------------------
+# Reusable Components
+# ---------------------------------------
 components:
   metadata:
     label: Page Metadata
     type: object
     fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
+      - { name: title, label: Title, type: string, required: true }
+      - { name: description, label: Description, type: string, required: true }
 
+  doc_template:
+    type: object
+    fields:
+      - { name: metadata, label: Page Metadata, component: metadata }
+      - name: sidebar
+        label: Sidebar Settings
+        type: object
+        fields:
+          - { name: order, label: Order, type: number }
+          - { name: label, label: Custom Sidebar Label, type: string }
+          - name: badge
+            label: Badge
+            type: object
+            fields:
+              - { name: text, label: Badge Text, type: string }
+              - name: variant
+                label: Badge Style
+                type: select
+                options:
+                  values: [note, tip, caution, danger, success, default]
+      - { name: draft, label: Draft, type: boolean, default: false }
+      - { name: tableOfContents, label: Show TOC, type: boolean, default: true }
+      - {
+          name: lastUpdated,
+          label: Show Last Updated,
+          type: boolean,
+          default: true,
+        }
+      - { name: body, label: Content, type: rich-text }
+
+# ---------------------------------------
+# Content Collections
+# ---------------------------------------
 content:
-  # ---------------------------------------
-  # Introduction
-  # ---------------------------------------
   - name: introduction
     label: "📖 Introduction"
     type: collection
     path: src/content/docs/introduction
-    filename: "{slug}.md"
-    format: yaml-frontmatter
+    filename: "{primary}.md"
     view:
-      fields:
-        - title
-        - description
-        - sidebar.label
-        - sidebar
-        - draft
+      primary: slug
+      fields: [slug, metadata.title, draft]
     fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
-      - name: slug
-        label: URL Slug (Permanent)
-        type: string
-        required: true
-        help: "Changing this will change the file name and may break links."
-      - name: sidebar
-        label: Sidebar Settings
-        type: object
-        fields:
-          - name: order
-            label: Order (lower numbers appear first)
-            type: number
-          - name: label
-            label: Custom Sidebar Label (optional)
-            type: string
-          - name: badge
-            label: Badge (optional)
-            type: object
-            fields:
-              - name: text
-                label: Badge Text
-                type: string
-              - name: variant
-                label: Badge Style
-                type: select
-                options:
-                  values: [note, tip, caution, danger, success, default]
-      - name: draft
-        label: Draft (hide from production)
-        type: boolean
-        default: false
-      - name: tableOfContents
-        label: Show Table of Contents
-        type: boolean
-        default: true
-      - name: lastUpdated
-        label: Show Last Updated Date
-        type: boolean
-        default: true
-      - name: body
-        label: Content
-        type: rich-text
+      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: page_data, component: doc_template }
 
-  # ---------------------------------------
-  # Installation
-  # ---------------------------------------
   - name: installation
     label: "🛠️ Installation"
     type: collection
     path: src/content/docs/installation
-    filename: "{slug}.md"
-    format: yaml-frontmatter
+    filename: "{primary}.md"
     view:
-      fields:
-        - title
-        - description
-        - sidebar.label
-        - sidebar
-        - draft
+      primary: slug
+      fields: [slug, metadata.title, draft]
     fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
-      - name: slug
-        label: URL Slug (Permanent)
-        type: string
-        required: true
-        help: "Changing this will change the file name and may break links."
-      - name: sidebar
-        label: Sidebar Settings
-        type: object
-        fields:
-          - name: order
-            label: Order (lower numbers appear first)
-            type: number
-          - name: label
-            label: Custom Sidebar Label (optional)
-            type: string
-          - name: badge
-            label: Badge (optional)
-            type: object
-            fields:
-              - name: text
-                label: Badge Text
-                type: string
-              - name: variant
-                label: Badge Style
-                type: select
-                options:
-                  values: [note, tip, caution, danger, success, default]
-      - name: draft
-        label: Draft (hide from production)
-        type: boolean
-        default: false
-      - name: tableOfContents
-        label: Show Table of Contents
-        type: boolean
-        default: true
-      - name: lastUpdated
-        label: Show Last Updated Date
-        type: boolean
-        default: true
-      - name: body
-        label: Content
-        type: rich-text
+      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: page_data, component: doc_template }
 
-  # ---------------------------------------
-  # Home Assistant Setup
-  # ---------------------------------------
   - name: home-assistant
     label: "🏠 Home Assistant Setup"
     type: collection
     path: src/content/docs/home-assistant
-    filename: "{slug}.md"
-    format: yaml-frontmatter
+    filename: "{primary}.md"
     view:
-      fields:
-        - title
-        - description
-        - sidebar.label
-        - sidebar
-        - draft
+      primary: slug
+      fields: [slug, metadata.title, draft]
     fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
-      - name: slug
-        label: URL Slug (Permanent)
-        type: string
-        required: true
-        help: "Changing this will change the file name and may break links."
-      - name: sidebar
-        label: Sidebar Settings
-        type: object
-        fields:
-          - name: order
-            label: Order (lower numbers appear first)
-            type: number
-          - name: label
-            label: Custom Sidebar Label (optional)
-            type: string
-          - name: badge
-            label: Badge (optional)
-            type: object
-            fields:
-              - name: text
-                label: Badge Text
-                type: string
-              - name: variant
-                label: Badge Style
-                type: select
-                options:
-                  values: [note, tip, caution, danger, success, default]
-      - name: draft
-        label: Draft (hide from production)
-        type: boolean
-        default: false
-      - name: tableOfContents
-        label: Show Table of Contents
-        type: boolean
-        default: true
-      - name: lastUpdated
-        label: Show Last Updated Date
-        type: boolean
-        default: true
-      - name: body
-        label: Content
-        type: rich-text
+      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: page_data, component: doc_template }
 
-  # ---------------------------------------
-  # Troubleshooting
-  # ---------------------------------------
   - name: troubleshooting
     label: "🔧 Troubleshooting"
     type: collection
     path: src/content/docs/troubleshooting
-    filename: "{slug}.md"
-    format: yaml-frontmatter
+    filename: "{primary}.md"
     view:
-      fields:
-        - title
-        - description
-        - sidebar.label
-        - sidebar
-        - draft
+      primary: slug
+      fields: [slug, metadata.title, draft]
     fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
-      - name: slug
-        label: URL Slug (Permanent)
-        type: string
-        required: true
-        help: "Changing this will change the file name and may break links."
-      - name: sidebar
-        label: Sidebar Settings
-        type: object
-        fields:
-          - name: order
-            label: Order (lower numbers appear first)
-            type: number
-          - name: label
-            label: Custom Sidebar Label (optional)
-            type: string
-          - name: badge
-            label: Badge (optional)
-            type: object
-            fields:
-              - name: text
-                label: Badge Text
-                type: string
-              - name: variant
-                label: Badge Style
-                type: select
-                options:
-                  values: [note, tip, caution, danger, success, default]
-      - name: draft
-        label: Draft (hide from production)
-        type: boolean
-        default: false
-      - name: tableOfContents
-        label: Show Table of Contents
-        type: boolean
-        default: true
-      - name: lastUpdated
-        label: Show Last Updated Date
-        type: boolean
-        default: true
-      - name: body
-        label: Content
-        type: rich-text
+      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: page_data, component: doc_template }
 
-  # ---------------------------------------
-  # Reference
-  # ---------------------------------------
   - name: reference
     label: "📚 Reference"
     type: collection
     path: src/content/docs/reference
-    filename: "{slug}.md"
-    format: yaml-frontmatter
+    filename: "{primary}.md"
     view:
-      fields:
-        - title
-        - description
-        - sidebar.label
-        - sidebar
-        - draft
+      primary: slug
+      fields: [slug, metadata.title, draft]
     fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
-      - name: slug
-        label: URL Slug (Permanent)
-        type: string
-        required: true
-        help: "Changing this will change the file name and may break links."
-      - name: sidebar
-        label: Sidebar Settings
-        type: object
-        fields:
-          - name: order
-            label: Order (lower numbers appear first)
-            type: number
-          - name: label
-            label: Custom Sidebar Label (optional)
-            type: string
-          - name: badge
-            label: Badge (optional)
-            type: object
-            fields:
-              - name: text
-                label: Badge Text
-                type: string
-              - name: variant
-                label: Badge Style
-                type: select
-                options:
-                  values: [note, tip, caution, danger, success, default]
-      - name: draft
-        label: Draft (hide from production)
-        type: boolean
-        default: false
-      - name: tableOfContents
-        label: Show Table of Contents
-        type: boolean
-        default: true
-      - name: lastUpdated
-        label: Show Last Updated Date
-        type: boolean
-        default: true
-      - name: body
-        label: Content
-        type: rich-text
+      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: page_data, component: doc_template }
 
-  # ---------------------------------------
-  # Community
-  # ---------------------------------------
   - name: community
     label: "👥 Community"
     type: collection
     path: src/content/docs/community
-    filename: "{slug}.md"
-    format: yaml-frontmatter
+    filename: "{primary}.md"
     view:
-      fields:
-        - title
-        - description
-        - sidebar.label
-        - sidebar
-        - draft
+      primary: slug
+      fields: [slug, metadata.title, draft]
     fields:
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: description
-        label: Description
-        type: text
-        required: true
-      - name: slug
-        label: URL Slug (Permanent)
-        type: string
-        required: true
-        help: "Changing this will change the file name and may break links."
-      - name: sidebar
-        label: Sidebar Settings
-        type: object
-        fields:
-          - name: order
-            label: Order (lower numbers appear first)
-            type: number
-          - name: label
-            label: Custom Sidebar Label (optional)
-            type: string
-          - name: badge
-            label: Badge (optional)
-            type: object
-            fields:
-              - name: text
-                label: Badge Text
-                type: string
-              - name: variant
-                label: Badge Style
-                type: select
-                options:
-                  values: [note, tip, caution, danger, success, default]
-      - name: draft
-        label: Draft (hide from production)
-        type: boolean
-        default: false
-      - name: tableOfContents
-        label: Show Table of Contents
-        type: boolean
-        default: true
-      - name: lastUpdated
-        label: Show Last Updated Date
-        type: boolean
-        default: true
-      - name: body
-        label: Content
-        type: rich-text
+      - { name: slug, label: URL Slug, type: string, required: true }
+      - { name: page_data, component: doc_template }

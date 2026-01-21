@@ -8,45 +8,15 @@ media:
 # ---------------------------------------
 components:
   metadata:
-    label: Page Metadata
     type: object
     fields:
       - { name: title, label: Title, type: string, required: true }
       - { name: description, label: Description, type: string, required: true }
 
-  doc_template:
-    type: object
-    fields:
-      - { name: metadata, label: Page Metadata, component: metadata }
-      - name: sidebar
-        label: Sidebar Settings
-        type: object
-        fields:
-          - { name: order, label: Order, type: number }
-          - { name: label, label: Custom Sidebar Label, type: string }
-          - name: badge
-            label: Badge
-            type: object
-            fields:
-              - { name: text, label: Badge Text, type: string }
-              - name: variant
-                label: Badge Style
-                type: select
-                options:
-                  values: [note, tip, caution, danger, success, default]
-      - { name: draft, label: Draft, type: boolean, default: false }
-      - { name: tableOfContents, label: Show TOC, type: boolean, default: true }
-      - {
-          name: lastUpdated,
-          label: Show Last Updated,
-          type: boolean,
-          default: true,
-        }
-      - { name: body, label: Content, type: rich-text }
-
 # ---------------------------------------
 # Content Collections
 # ---------------------------------------
+
 content:
   - name: introduction
     label: "📖 Introduction"
@@ -55,67 +25,121 @@ content:
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, metadata.title, draft]
+      fields: [slug, title, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
-      - { name: page_data, component: doc_template }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: description, label: Description, type: string, required: true }
+      - name: sidebar
+        label: Sidebar Settings
+        type: object
+        fields:
+          - { name: order, label: Order, type: number }
+          - { name: label, label: Custom Label, type: string }
+      - { name: draft, label: Draft, type: boolean, default: false }
+      - { name: body, label: Content, type: rich-text }
 
   - name: installation
     label: "🛠️ Installation"
     type: collection
-    path: src/content/docs/installation
+    path: src/content/docs/introduction
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, metadata.title, draft]
+      fields: [slug, title, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
-      - { name: page_data, component: doc_template }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: description, label: Description, type: string, required: true }
+      - name: sidebar
+        label: Sidebar Settings
+        type: object
+        fields:
+          - { name: order, label: Order, type: number }
+          - { name: label, label: Custom Label, type: string }
+      - { name: draft, label: Draft, type: boolean, default: false }
+      - { name: body, label: Content, type: rich-text }
 
   - name: home-assistant
     label: "🏠 Home Assistant Setup"
     type: collection
-    path: src/content/docs/home-assistant
+    path: src/content/docs/introduction
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, metadata.title, draft]
+      fields: [slug, title, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
-      - { name: page_data, component: doc_template }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: description, label: Description, type: string, required: true }
+      - name: sidebar
+        label: Sidebar Settings
+        type: object
+        fields:
+          - { name: order, label: Order, type: number }
+          - { name: label, label: Custom Label, type: string }
+      - { name: draft, label: Draft, type: boolean, default: false }
+      - { name: body, label: Content, type: rich-text }
 
   - name: troubleshooting
     label: "🔧 Troubleshooting"
     type: collection
-    path: src/content/docs/troubleshooting
+    path: src/content/docs/introduction
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, metadata.title, draft]
+      fields: [slug, title, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
-      - { name: page_data, component: doc_template }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: description, label: Description, type: string, required: true }
+      - name: sidebar
+        label: Sidebar Settings
+        type: object
+        fields:
+          - { name: order, label: Order, type: number }
+          - { name: label, label: Custom Label, type: string }
+      - { name: draft, label: Draft, type: boolean, default: false }
+      - { name: body, label: Content, type: rich-text }
 
   - name: reference
     label: "📚 Reference"
     type: collection
-    path: src/content/docs/reference
+    path: src/content/docs/introduction
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, metadata.title, draft]
+      fields: [slug, title, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
-      - { name: page_data, component: doc_template }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: description, label: Description, type: string, required: true }
+      - name: sidebar
+        label: Sidebar Settings
+        type: object
+        fields:
+          - { name: order, label: Order, type: number }
+          - { name: label, label: Custom Label, type: string }
+      - { name: draft, label: Draft, type: boolean, default: false }
+      - { name: body, label: Content, type: rich-text }
 
   - name: community
     label: "👥 Community"
     type: collection
-    path: src/content/docs/community
+    path: src/content/docs/introduction
     filename: "{primary}.md"
     view:
       primary: slug
-      fields: [slug, metadata.title, draft]
+      fields: [slug, title, draft]
     fields:
       - { name: slug, label: URL Slug, type: string, required: true }
-      - { name: page_data, component: doc_template }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: description, label: Description, type: string, required: true }
+      - name: sidebar
+        label: Sidebar Settings
+        type: object
+        fields:
+          - { name: order, label: Order, type: number }
+          - { name: label, label: Custom Label, type: string }
+      - { name: draft, label: Draft, type: boolean, default: false }
+      - { name: body, label: Content, type: rich-text }

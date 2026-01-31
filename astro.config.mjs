@@ -99,7 +99,6 @@ export default defineConfig({
         ],
       },
     }),
-    sitemap(),
   ],
 
   adapter: cloudflare({

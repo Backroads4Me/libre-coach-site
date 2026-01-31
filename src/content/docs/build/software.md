@@ -22,7 +22,7 @@ draft: false
 9. Click **Write**
 10. Click to confirm you understand and wait for completion
 
-### Step 2: Configure CAN HAT
+### Step 2: Enable CAN interface and drivers
 
 You must edit the `config.txt` file **before** the first boot to enable the CAN HAT. This is done while the NVME drive is still connected to your computer.
 After Step 1 completes, the disk will be automatically disconnected from the PC. You need to unplug the USB cable, then reconnect it again for this step.

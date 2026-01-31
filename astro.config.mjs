@@ -17,6 +17,20 @@ export default defineConfig({
     Icons({
       starlight: {
         title: "LibreCoach",
+        head: [
+          {
+            tag: "meta",
+            attrs: {
+              name: "norton-safeweb-site-verification",
+              content:
+                "2CAFY2-JTFV318TRCA6HVVHXGVUKGXHZFW01BAVPJQXC4XQM-G31G3WKGL1MI-4FXXQNWN1BS41PYTT86QXOWS1IKORDUX990EUUDKXZ-XFZKZ6KW2T95YN9DL9J9LRM",
+            },
+          },
+          {
+            tag: "link",
+            attrs: { rel: "sitemap", href: "/sitemap-index.xml" },
+          },
+        ],
         plugins: [
           starlightThemeSix({
             //optional
